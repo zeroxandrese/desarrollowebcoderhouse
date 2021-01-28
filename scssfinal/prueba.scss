@@ -70,31 +70,16 @@ body{
 .description-carrusel{
 	font-size: 13px;
 }
-.footer__general--img{
-	display: block;
- 	margin-left: auto;
- 	margin-right: auto;
-}
-.cuadros__presentacion--cuadros1,.cuadros__presentacion--cuadros2,.cuadros__presentacion--cuadros3,.cuadros__presentacion--cuadros4{
-	overflow: hidden;
-	box-shadow: $box-comun;
-	width: 340px;
-	height: 120px;
-	background: $base-color-contenedores;
-	transition: 1s linear;
-	border-radius: 10px;
-	margin-left: 1rem;
-	color: white;
-	&:hover{
-	height: 245px;
-	}
-}
-	
+.footer_general{
+	display: flex;
+    align-items: center;
+	justify-content: center;
+}	
 .contenedor__iframe {
     position: relative;
     overflow: hidden;
     padding-top: 56.25%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     &--ajustable{
     position: absolute;
     top: 0;
@@ -115,32 +100,7 @@ body{
 	text-align: center;
 	background: $base-color-contenedores;
 	color: white;
-}
- .cuadros__presentacion--cuadros1{
-  	float: left;
-  	margin-top: 1rem;
-  }
-  .cuadros__presentacion--cuadros2{
-  	float: left;
-  	margin-top: 1rem;
-  }
-  .cuadros__presentacion--cuadros3{
-  	float: left;
-  	margin-top: 1rem;
-  }
-  .cuadros__presentacion--cuadros4{
-  	float: left;
-  	margin-top: 1rem;
-  }
-
-	ul li ul{
-   position: absolute;
-   display: none;
-  }
-  ul li:hover ul {
-   display:block;
-   height: 200px;
-}
+	}
 .fab {
 	position: fixed;
 	left: 1rem;
@@ -189,6 +149,38 @@ body{
 	 	border-radius: 10px; 
 	 }
 	nav a:hover{
-		transform: scale(1.2);
+		transform: scale(1.4);
   		max-width: 100%;
+	}
+	.titulos_box{
+		display: block;
+		text-align: center;
+		justify-content: center;
+		background: $base-color-contenedores;
+		color: white;
+		border: $border-linea;
+		box-shadow: $box-comun;
+		border-radius: $border-general;
+		opacity: 1;
+	}
+	.lista_index{
+		position: absolute;
+		top: 40%;
+		margin-top: -3rem;
+	}
+	@media only screen and (max-width: 767px){
+		.row{
+		display: block;
+		overflow: hidden;
+		padding-right: 2rem;
+		align-items: center;
+		text-align: justify;
+		}
+		}
+	.img-fluid{
+		box-shadow: $box-comun;
+		border-radius: 10px;
+	}
+	.nav-link{
+		margin-left: 2rem;
 	}

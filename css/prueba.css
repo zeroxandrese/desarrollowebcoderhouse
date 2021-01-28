@@ -62,29 +62,16 @@ body {
 .description-carrusel {
   font-size: 13px; }
 
-.footer__general--img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto; }
-
-.cuadros__presentacion--cuadros1, .cuadros__presentacion--cuadros2, .cuadros__presentacion--cuadros3, .cuadros__presentacion--cuadros4 {
-  overflow: hidden;
-  box-shadow: 0 0 10px black;
-  width: 340px;
-  height: 120px;
-  background: linear-gradient(1deg, #020024 0%, #06cea6 35%, #00d4ff 100%);
-  transition: 1s linear;
-  border-radius: 10px;
-  margin-left: 1rem;
-  color: white; }
-  .cuadros__presentacion--cuadros1:hover, .cuadros__presentacion--cuadros2:hover, .cuadros__presentacion--cuadros3:hover, .cuadros__presentacion--cuadros4:hover {
-    height: 245px; }
+.footer_general {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .contenedor__iframe {
   position: relative;
   overflow: hidden;
   padding-top: 56.25%;
-  margin-top: 2rem; }
+  margin-top: 1rem; }
   .contenedor__iframe--ajustable {
     position: absolute;
     top: 0;
@@ -104,30 +91,6 @@ body {
   text-align: center;
   background: linear-gradient(1deg, #020024 0%, #06cea6 35%, #00d4ff 100%);
   color: white; }
-
-.cuadros__presentacion--cuadros1 {
-  float: left;
-  margin-top: 1rem; }
-
-.cuadros__presentacion--cuadros2 {
-  float: left;
-  margin-top: 1rem; }
-
-.cuadros__presentacion--cuadros3 {
-  float: left;
-  margin-top: 1rem; }
-
-.cuadros__presentacion--cuadros4 {
-  float: left;
-  margin-top: 1rem; }
-
-ul li ul {
-  position: absolute;
-  display: none; }
-
-ul li:hover ul {
-  display: block;
-  height: 200px; }
 
 .fab {
   position: fixed;
@@ -175,5 +138,36 @@ span img {
   border-radius: 10px; }
 
 nav a:hover {
-  transform: scale(1.2);
+  transform: scale(1.4);
   max-width: 100%; }
+
+.titulos_box {
+  display: block;
+  text-align: center;
+  justify-content: center;
+  background: linear-gradient(1deg, #020024 0%, #06cea6 35%, #00d4ff 100%);
+  color: white;
+  border: 2px solid black;
+  box-shadow: 0 0 10px black;
+  border-radius: 30px;
+  opacity: 1; }
+
+.lista_index {
+  position: absolute;
+  top: 40%;
+  margin-top: -3rem; }
+
+@media only screen and (max-width: 767px) {
+  .row {
+    display: block;
+    overflow: hidden;
+    padding-right: 2rem;
+    align-items: center;
+    text-align: justify; } }
+
+.img-fluid {
+  box-shadow: 0 0 10px black;
+  border-radius: 10px; }
+
+.nav-link {
+  margin-left: 2rem; }
