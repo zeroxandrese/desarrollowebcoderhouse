@@ -71,9 +71,8 @@ body{
 	font-size: 13px;
 }
 .footer_general{
-	display: flex;
-    align-items: center;
-	justify-content: center;
+   text-align: center;
+	margin-top: 1rem;
 }	
 .contenedor__iframe {
     position: relative;
@@ -91,8 +90,11 @@ body{
 }
 .contenido{
 	display: inline-block;
-	padding-top: 3rem;
-	padding-bottom: 3rem;
+	margin-top: 1rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
 	border: $border-linea;
 	box-shadow: $box-comun;
 	border-radius: $border-general;
@@ -101,13 +103,21 @@ body{
 	background: $base-color-contenedores;
 	color: white;
 	}
-.fab {
+.fa-whatsapp-square{
 	position: fixed;
 	left: 1rem;
 	z-index: 1000;
 	margin-top: 10rem;
 	font-size: 70px;
-	color: white;
+	color: #00BB2D;
+}
+.whatsappyn{
+	position: fixed;
+	left: 1rem;
+	z-index: 1000;
+	margin-top: 35rem;
+	font-size: 70px;
+	color: #00BB2D;
 }
 @media only screen and (min-width: 767px) {
 .container{
@@ -164,10 +174,15 @@ body{
 		opacity: 1;
 	}
 	.lista_index{
-		position: absolute;
+		position: relative;
 		top: 40%;
-		margin-top: -3rem;
 	}
+	.row{
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+		margin-left: 1rem;
+		row-gap: 1.5rem;
+		}
 	@media only screen and (max-width: 767px){
 		.row{
 		display: block;
@@ -184,3 +199,70 @@ body{
 	.nav-link{
 		margin-left: 2rem;
 	}
+	.fa-facebook{
+		font-size: 70px;
+	}
+	.fa-instagram{
+		font-size: 70px;
+		color:#E1306C;
+	}
+	@media only screen and (max-width: 767px){
+		.fa-whatsapp-square{
+			position: fixed;
+			left: 1rem;
+			z-index: 1000;
+			margin-top: 25rem;
+			font-size: 50px;
+			color: #00BB2D;
+		}
+		}
+	@media only screen and (max-width: 767px){
+			.whatsappyn{
+				position: fixed;
+				left: 1rem;
+				z-index: 1000;
+				margin-top: 30rem;
+				font-size: 50px;
+				color: #00BB2D;
+			}
+			}
+			.animacion_mueble:hover{
+				animation-name: animacion_muebleb;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes animacion_muebleb{
+				0%{transform: rotateY(0deg);}
+				100%{transform: rotateY(360deg);}
+			}
+			.animacion_remodelacion:hover{
+				animation-name: animacion_remodelacionb;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes animacion_remodelacionb{
+				0%{transform: rotateY(0deg);}
+				100%{transform: rotateY(360deg);}
+			}
+			.animacion_cableado:hover{
+				animation-name: animacion_cableadob;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes animacion_cableadob{
+				0%{transform: rotateY(0deg);}
+				100%{transform: rotateY(360deg);}
+			}
+			.animacion_informatica:hover{
+				animation-name: animacion_informaticab;
+				animation-duration: 10s;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+			}
+			@keyframes animacion_informaticab{
+				0%{transform: rotateY(0deg);}
+				100%{transform: rotateY(360deg);}
+			}
