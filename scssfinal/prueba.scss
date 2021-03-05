@@ -1,94 +1,66 @@
-$base-color: rgb(2,0,36);
-$base-color-contenedores: linear-gradient(1deg, rgba(2,0,36,1) 0%, rgba(6,206,166,1) 35%, rgba(0,212,255,1) 100%);
+$base-color: rgb(2, 0, 36);
+$base-color-contenedores: linear-gradient(
+	1deg,
+	rgba(2, 0, 36, 1) 0%,
+	rgba(6, 206, 166, 1) 35%,
+	rgba(0, 212, 255, 1) 100%
+);
 $box-comun: 0 0 10px black;
 $border-general: 30px;
 $border-linea: 2px solid black;
 
-@import url("rootbootstrap\scss\_functions");
-@import url("rootbootstrap\scss\_variables");
-@import url("rootbootstrap\scss\_mixins");
-@import url("rootbootstrap\scss\_root");
-@import url("rootbootstrap\scss\_reboot");
-@import url("rootbootstrap\scss\_type");
-@import url("rootbootstrap\scss\_images");
-@import url("rootbootstrap\scss\_code");
-@import url("rootbootstrap\scss\_grid");
-@import url("rootbootstrap\scss\_tables");
-@import url("rootbootstrap\scss\_forms");
-@import url("rootbootstrap\scss\_buttons");
-@import url("rootbootstrap\scss\_transitions");
-@import url("rootbootstrap\scss\_dropdown");
-@import url("rootbootstrap\scss\_button-group");
-@import url("rootbootstrap\scss\_input-group");
-@import url("rootbootstrap\scss\_custom-forms");
-@import url("rootbootstrap\scss\_nav");
-@import url("rootbootstrap\scss\_navbar");
-@import url("rootbootstrap\scss\_card");
-@import url("rootbootstrap\scss\_breadcrumb");
-@import url("rootbootstrap\scss\_pagination");
-@import url("rootbootstrap\scss\_badge");
-@import url("rootbootstrap\scss\_jumbotron");
-@import url("rootbootstrap\scss\_alert");
-@import url("rootbootstrap\scss\_progress");
-@import url("rootbootstrap\scss\_media");
-@import url("rootbootstrap\scss\_list-group");
-@import url("rootbootstrap\scss\_close");
-@import url("rootbootstrap\scss\_toasts");
-@import url("rootbootstrap\scss\_modal");
-@import url("rootbootstrap\scss\_tooltip");
-@import url("rootbootstrap\scss\_popover");
-@import url("rootbootstrap\scss\_carousel");
-@import url("rootbootstrap\scss\_spinners");
-@import url("rootbootstrap\scss\_print");
-@import url("rootbootstrap\scss\_utilities");
-
-
-body{
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+body {
 	background: $base-color;
 	font-family: "Space Mono", sans-serif;
 	color: white;
 }
 
-.cabecera__bar--logo{
+.cabecera__bar--logo {
 	width: 50px;
 	height: 50px;
 	border-radius: 10px;
 	box-shadow: $box-comun;
 	position: relative;
 	margin-right: 2rem;
-	&:hover{
-	animation-name: animacion_logo;
-	animation-duration: 2s;
-	animation-iteration-count: infinite;
-	animation-direction: alternate;
+	&:hover {
+		animation-name: animacion_logo;
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+	}
 }
+@keyframes animacion_logo {
+	0% {
+		transform: rotateY(0deg);
+	}
+	100% {
+		transform: rotateY(360deg);
+	}
 }
-@keyframes animacion_logo{
-	0%{transform: rotateY(0deg);}
-	100%{transform: rotateY(360deg);}
-}
-.description-carrusel{
+.description-carrusel {
 	font-size: 13px;
 }
-.footer_general{
-   text-align: center;
+.footer_general {
+	text-align: center;
 	margin-top: 1rem;
-}	
-.contenedor__iframe {
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
-    margin-top: 1rem;
-    &--ajustable{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border: 0;
-    }
 }
-.contenido{
+/* .contenedor__iframe {
+	position: relative;
+	overflow: hidden; 
+	 padding-top: 56.25%;
+	margin-top: 1rem;
+	&--ajustable {
+		position: absolute;
+		top: 0;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		width: 100vh;
+		height: 100vh;
+		border-radius: $border-general;
+	}
+} */
+/*.contenido {
 	display: inline-block;
 	margin-top: 1rem;
 	padding-top: 2rem;
@@ -102,70 +74,31 @@ body{
 	text-align: center;
 	background: $base-color-contenedores;
 	color: white;
-	}
-.fa-whatsapp-square{
+}*/
+.fa-whatsapp-square {
 	position: fixed;
 	left: 1rem;
 	z-index: 1000;
 	margin-top: 10rem;
 	font-size: 70px;
-	color: #00BB2D;
+	color: #00bb2d;
 }
-.whatsappyn{
+.whatsappyn {
 	position: fixed;
 	left: 1rem;
 	z-index: 1000;
 	margin-top: 35rem;
 	font-size: 70px;
-	color: #00BB2D;
+	color: #00bb2d;
 }
-@media only screen and (min-width: 767px) {
-.container{
-	display: grid;
-	grid-template-columns: 1fr 25% 25%;
-	gap: 1rem;
-	align-items: center;
-	text-align: justify;
-	margin-top: 1rem;
-	background: $base-color-contenedores;
-	color: white;
-	border: $border-linea;
-	box-shadow: $box-comun;
-	border-radius: $border-general;
-	opacity: 1;
-	}
-	}
-	@media only screen and (max-width: 767px){
-	.container{
-	display: block;
-	align-items: center;
-	text-align: justify;
-	margin-top: 1rem;
-	background: $base-color-contenedores;
-	color: white;
-	border: $border-linea;
-	box-shadow: $box-comun;
-	border-radius: $border-general;
-	opacity: 1;
-	}
-	}
-	 span img{
-	 	display: block;
-	 	margin-left: auto;
-	 	margin-right: auto;
-	 	margin-top: 1rem;
-	 	box-shadow: $box-comun;
-	 	margin-bottom: 1rem;
-	 	border-radius: 10px; 
-	 }
-	nav a:hover{
-		transform: scale(1.4);
-  		max-width: 100%;
-	}
-	.titulos_box{
-		display: block;
-		text-align: center;
-		justify-content: center;
+/* @media only screen and (min-width: 767px) {
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 25% 25%;
+		gap: 1rem;
+		align-items: center;
+		text-align: justify;
+		margin-top: 1rem;
 		background: $base-color-contenedores;
 		color: white;
 		border: $border-linea;
@@ -173,96 +106,92 @@ body{
 		border-radius: $border-general;
 		opacity: 1;
 	}
-	.lista_index{
-		position: relative;
-		top: 40%;
+}
+@media only screen and (max-width: 767px) {
+	.container {
+		display: block;
+		align-items: center;
+		text-align: justify;
+		margin-top: 1rem;
+		background: $base-color-contenedores;
+		color: white;
+		border: $border-linea;
+		box-shadow: $box-comun;
+		border-radius: $border-general;
+		opacity: 1;
 	}
-	.row{
-		margin-top: 2rem;
-		margin-bottom: 2rem;
-		margin-left: 1rem;
-		row-gap: 1.5rem;
-		}
-	@media only screen and (max-width: 767px){
-		.row{
+} */
+/* span img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 1rem;
+	box-shadow: $box-comun;
+	margin-bottom: 1rem;
+	border-radius: 10px;
+} */
+.titulos_box {
+	display: block;
+	text-align: center;
+	justify-content: center;
+	background: $base-color-contenedores;
+	color: white;
+	border: $border-linea;
+	box-shadow: $box-comun;
+	border-radius: $border-general;
+	opacity: 1;
+}
+.lista_index {
+	position: relative;
+	top: 25%;
+}
+.margin_row {
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 1rem;
+	row-gap: 1.5rem;
+}
+/* @media only screen and (max-width: 767px) {
+	.row {
 		display: block;
 		overflow: hidden;
 		padding-right: 2rem;
 		align-items: center;
 		text-align: justify;
-		}
-		}
-	.img-fluid{
-		box-shadow: $box-comun;
-		border-radius: 10px;
 	}
-	.nav-link{
-		margin-left: 2rem;
+} */
+.img-fluid {
+	box-shadow: $box-comun;
+	border-radius: 10px;
+}
+.nav-link {
+	margin-left: 2rem;
+	color: white;
+}
+.fa-facebook {
+	font-size: 70px;
+}
+.fa-instagram {
+	font-size: 70px;
+	color: #e1306c;
+}
+@media only screen and (max-width: 767px) {
+	.fa-whatsapp-square {
+		position: fixed;
+		left: 1rem;
+		z-index: 1000;
+		margin-top: 25rem;
+		font-size: 50px;
+		color: #00bb2d;
 	}
-	.fa-facebook{
-		font-size: 70px;
+}
+@media only screen and (max-width: 767px) {
+	.whatsappyn {
+		position: fixed;
+		left: 1rem;
+		z-index: 1000;
+		margin-top: 30rem;
+		font-size: 50px;
+		color: #00bb2d;
 	}
-	.fa-instagram{
-		font-size: 70px;
-		color:#E1306C;
-	}
-	@media only screen and (max-width: 767px){
-		.fa-whatsapp-square{
-			position: fixed;
-			left: 1rem;
-			z-index: 1000;
-			margin-top: 25rem;
-			font-size: 50px;
-			color: #00BB2D;
-		}
-		}
-	@media only screen and (max-width: 767px){
-			.whatsappyn{
-				position: fixed;
-				left: 1rem;
-				z-index: 1000;
-				margin-top: 30rem;
-				font-size: 50px;
-				color: #00BB2D;
-			}
-			}
-			.animacion_mueble:hover{
-				animation-name: animacion_muebleb;
-				animation-duration: 10s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-			}
-			@keyframes animacion_muebleb{
-				0%{transform: rotateY(0deg);}
-				100%{transform: rotateY(360deg);}
-			}
-			.animacion_remodelacion:hover{
-				animation-name: animacion_remodelacionb;
-				animation-duration: 10s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-			}
-			@keyframes animacion_remodelacionb{
-				0%{transform: rotateY(0deg);}
-				100%{transform: rotateY(360deg);}
-			}
-			.animacion_cableado:hover{
-				animation-name: animacion_cableadob;
-				animation-duration: 10s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-			}
-			@keyframes animacion_cableadob{
-				0%{transform: rotateY(0deg);}
-				100%{transform: rotateY(360deg);}
-			}
-			.animacion_informatica:hover{
-				animation-name: animacion_informaticab;
-				animation-duration: 10s;
-				animation-iteration-count: infinite;
-				animation-direction: alternate;
-			}
-			@keyframes animacion_informaticab{
-				0%{transform: rotateY(0deg);}
-				100%{transform: rotateY(360deg);}
-			}
+}
