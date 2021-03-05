@@ -13,7 +13,7 @@ $border-linea: 2px solid black;
 body {
 	background: $base-color;
 	font-family: "Space Mono", sans-serif;
-	color: white;
+	color: whitesmoke;
 }
 
 .cabecera__bar--logo {
@@ -45,36 +45,6 @@ body {
 	text-align: center;
 	margin-top: 1rem;
 }
-/* .contenedor__iframe {
-	position: relative;
-	overflow: hidden; 
-	 padding-top: 56.25%;
-	margin-top: 1rem;
-	&--ajustable {
-		position: absolute;
-		top: 0;
-		margin-left: 1rem;
-		margin-right: 1rem;
-		width: 100vh;
-		height: 100vh;
-		border-radius: $border-general;
-	}
-} */
-/*.contenido {
-	display: inline-block;
-	margin-top: 1rem;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	border: $border-linea;
-	box-shadow: $box-comun;
-	border-radius: $border-general;
-	opacity: 1;
-	text-align: center;
-	background: $base-color-contenedores;
-	color: white;
-}*/
 .fa-whatsapp-square {
 	position: fixed;
 	left: 1rem;
@@ -91,45 +61,6 @@ body {
 	font-size: 70px;
 	color: #00bb2d;
 }
-/* @media only screen and (min-width: 767px) {
-	.container {
-		display: grid;
-		grid-template-columns: 1fr 25% 25%;
-		gap: 1rem;
-		align-items: center;
-		text-align: justify;
-		margin-top: 1rem;
-		background: $base-color-contenedores;
-		color: white;
-		border: $border-linea;
-		box-shadow: $box-comun;
-		border-radius: $border-general;
-		opacity: 1;
-	}
-}
-@media only screen and (max-width: 767px) {
-	.container {
-		display: block;
-		align-items: center;
-		text-align: justify;
-		margin-top: 1rem;
-		background: $base-color-contenedores;
-		color: white;
-		border: $border-linea;
-		box-shadow: $box-comun;
-		border-radius: $border-general;
-		opacity: 1;
-	}
-} */
-/* span img {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1rem;
-	box-shadow: $box-comun;
-	margin-bottom: 1rem;
-	border-radius: 10px;
-} */
 .titulos_box {
 	display: block;
 	text-align: center;
@@ -151,15 +82,6 @@ body {
 	margin-left: 1rem;
 	row-gap: 1.5rem;
 }
-/* @media only screen and (max-width: 767px) {
-	.row {
-		display: block;
-		overflow: hidden;
-		padding-right: 2rem;
-		align-items: center;
-		text-align: justify;
-	}
-} */
 .img-fluid {
 	box-shadow: $box-comun;
 	border-radius: 10px;
@@ -194,4 +116,7 @@ body {
 		font-size: 50px;
 		color: #00bb2d;
 	}
+}
+.modal-title {
+	color: black;
 }
