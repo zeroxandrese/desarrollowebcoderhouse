@@ -18,6 +18,7 @@ var valorFinalAnterior = "";
 const ProductosComprados = [];
 const melaminess = [];
 const IDS = "";
+let id = "";
 
 
 // declaracion de funciones constructoras a utilizar 
@@ -115,10 +116,9 @@ $("#botonComprar").click(() => {
 });
 
 //funcion comprar y añadido al carrito, la informacion se convierte en json para el guardado en el localstorage
-if (idObtenido > 4) {
+if (idObtenido === "") {
     $('#botonComprar').attr("disabled", true);
 } else {
-    $('#botonComprar').attr("disabled", null);
     $('#botonComprar').on('click', function () {
         $('#bodyCarrito').append(`<tr>
         <td>${dato.color}</td>
