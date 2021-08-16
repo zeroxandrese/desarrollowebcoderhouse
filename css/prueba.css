@@ -7187,7 +7187,8 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  background: #020024;
+  background: rgb(36,0,0);
+  background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(121,9,9,1) 35%);
   font-family: "Space Mono", sans-serif;
   color: whitesmoke; }
 
@@ -7342,8 +7343,17 @@ body {
     transform: translateZ(-35vw) rotateY(-240deg); }
   82.5%, 100% {
     transform: translateZ(-35vw) rotateY(-360deg); } }
-
-video {
-  margin-top: 120px;
+ .img2{
+  position: absolute;
+  top: 1070px;
+  left: 550px;
   border-radius: 10px;
-  box-shadow: 0 0 20px white; }
+}
+@media only screen and (max-width: 400px) {
+  .img2{
+    display: none;
+    } 
+  /* .icon-cards__content{
+    display: flex;
+    margin-right: 100px;
+  } */}

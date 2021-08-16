@@ -1,5 +1,0 @@
-[{"color": "BLANCO","espesor": 20,"ancho": 30,"alto": 220,"material": "MDF","precio": 125,"imagen": "./imagenes/mdf-blanco.jpg","idPlancha": 0},
-    {"color": "NEGRO","espesor": 20,"ancho": 30,"alto": 220,"material": "MDP","precio": 90,"imagen": "./imagenes/melamine-negro.jfif","idPlancha": 1},
-    {"color": "ROJO","espesor": 20,"ancho": 30,"alto": 220,"material": "MDP","precio": 80,"imagen": "./imagenes/mdf-rojo.jpg","idPlancha": 2},
-    {"color": "MARRON","espesor": 20,"ancho": 30,"alto": 220,"material": "MDF","precio": 134,"imagen": "./imagenes/mdf-madera.jpg","idPlancha": 3},
-    {"color": "AZUL","espesor": 20,"ancho": 30,"alto": 220,"material": "MDF","precio": 110,"imagen": "./imagenes/mdf-azul.jpg","idPlancha": 4}]
